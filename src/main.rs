@@ -1,5 +1,5 @@
-// Import modul 15052025
-mod modul_15052025;
+// Import modul 1602025
+mod modul_1602025;
 
 fn main() {
     println!("Hello, world!");
@@ -15,14 +15,32 @@ fn main() {
     println!("arr: {:?}", arr);
     
     println!("\n----- Demo Kondisional -----");
-    modul_15052025::demo_conditional();
+    modul_1602025::demo_conditional();
     
     println!("\n----- Demo Loops -----");
-    modul_15052025::demo_loops();
+    modul_1602025::demo_loops();
     
     println!("\n----- Demo Greet -----");
-    modul_15052025::greet("Firda");
+    modul_1602025::greet("Firda");
     
     println!("\n----- Demo Shadowing -----");
-    modul_15052025::demo_shadowing();
+    modul_1602025::demo_shadowing();
+    
+    println!("\n----- Demo Ownership -----");
+    modul_1602025::demo_ownership();
+    
+    println!("\n----- Demo Clone -----");
+    modul_1602025::demo_clone();
+    
+    println!("\n----- Demo Borrowing -----");
+    modul_1602025::demo_borrowing();
+    
+    println!("\n----- Demo Mutable Borrowing -----");
+    modul_1602025::demo_mutable_borrowing();
+    
+    println!("\n----- Demo String Slices -----");
+    modul_1602025::demo_string_slices();
+    
+    println!("\n----- Demo Lifetime -----");
+    modul_1602025::demo_lifetime();
 }
