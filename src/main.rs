@@ -1,5 +1,5 @@
-// Import modul 1602025
-mod modul_1602025;
+// Import modul 17052025
+mod modul_17052025;
 
 fn main() {
     println!("Hello, world!");
@@ -14,33 +14,35 @@ fn main() {
     println!("tup: {:?}", tup);
     println!("arr: {:?}", arr);
     
-    println!("\n----- Demo Kondisional -----");
-    modul_1602025::demo_conditional();
+    println!("\n----- Demo Struct User -----");
+    modul_17052025::demo_struct_user();
     
-    println!("\n----- Demo Loops -----");
-    modul_1602025::demo_loops();
+    println!("\n----- Demo Struct Rectangle -----");
+    modul_17052025::demo_struct_rectangle();
     
-    println!("\n----- Demo Greet -----");
-    modul_1602025::greet("Firda");
+    println!("\n----- Demo Enum Direction -----");
+    modul_17052025::demo_enum_direction();
     
-    println!("\n----- Demo Shadowing -----");
-    modul_1602025::demo_shadowing();
+    println!("\n----- Demo Enum Message -----");
+    modul_17052025::demo_enum_message();
     
-    println!("\n----- Demo Ownership -----");
-    modul_1602025::demo_ownership();
+    println!("\n----- Demo Option -----");
+    modul_17052025::demo_option();
     
-    println!("\n----- Demo Clone -----");
-    modul_1602025::demo_clone();
+    println!("\n----- Demo Result -----");
+    modul_17052025::demo_result();
     
-    println!("\n----- Demo Borrowing -----");
-    modul_1602025::demo_borrowing();
+    // Contoh mengakses struct dan fungsi langsung
+    println!("\n----- Demo Membuat Rectangle Baru -----");
+    let kotak = modul_17052025::Rectangle::new(20, 15);
+    println!("Luas kotak: {}", kotak.area());
     
-    println!("\n----- Demo Mutable Borrowing -----");
-    modul_1602025::demo_mutable_borrowing();
-    
-    println!("\n----- Demo String Slices -----");
-    modul_1602025::demo_string_slices();
-    
-    println!("\n----- Demo Lifetime -----");
-    modul_1602025::demo_lifetime();
+    // Contoh membuat User sendiri
+    println!("\n----- Demo Membuat User Baru -----");
+    let user_baru = modul_17052025::User {
+        username: String::from("budi"),
+        email: String::from("budi@example.com"),
+        active: true,
+    };
+    println!("User baru: {}, {}", user_baru.username, user_baru.email);
 }
