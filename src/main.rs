@@ -1,6 +1,9 @@
 // Import modul 17052025
 mod modul_17052025;
 
+// Import modul 19052025
+mod modul_19052025;
+
 fn main() {
     println!("Hello, world!");
 
@@ -45,4 +48,21 @@ fn main() {
         active: true,
     };
     println!("User baru: {}, {}", user_baru.username, user_baru.email);
+    
+    // Demo dari modul_19052025
+    println!("\n----- Demo Collections -----");
+    modul_19052025::demo_collections();
+    
+    println!("\n----- Demo File I/O -----");
+    modul_19052025::demo_file_io();
+    
+    println!("\n----- Demo Error Handling -----");
+    modul_19052025::demo_error_handling();
+    
+    // Contoh penggunaan fungsi dari modul_19052025
+    println!("\n----- Contoh Penggunaan Fungsi Bagi -----");
+    match modul_19052025::bagi(20, 5) {
+        Ok(hasil) => println!("Hasil pembagian: {}", hasil),
+        Err(e) => println!("Error: {}", e),
+    }
 }
